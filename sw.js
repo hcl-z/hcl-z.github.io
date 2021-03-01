@@ -11,7 +11,7 @@ self.addEventListener('install', event => {
     event.waitUntil(
         caches.open('main-cache', (cache) => {
             console.log('ok');
-            return cache.add('./offline.html')
+            return cache.add('/offline.html')
         })
     )
 });
